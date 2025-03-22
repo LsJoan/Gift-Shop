@@ -7,6 +7,34 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+    .contenedor {
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      padding: 50px;
+    }
+
+    .transicion {
+      display: inline-block;
+      animation: moverPalabras 20s linear infinite;
+    }
+
+    @keyframes moverPalabras {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    .palabras {
+      font-size: 24px;
+      font-family: Arial, sans-serif;
+      padding-right: 60px; /* Espaciado entre las palabras */
+    }
+  </style>
 </head>
 <body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen relative">
 
@@ -39,7 +67,18 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-    
+  <div class="contenedor">
+    <div class="transicion">
+      <span class="palabras">Coffee Production</span>
+      <span class="palabras">Rom Tasting</span>
+      <span class="palabras">Cigars Factory</span>
+      <span class="palabras">Cosmetic</span>
+      <span class="palabras">Jewels</span>
+      <span class="palabras">Souvenirs</span>
+      <span class="palabras">Chocolate Factory</span>
+    </div>
+</div>
+  
     <section class="w-full text-center p-4 bg-gray-800 text-white relative z-10">
         <p class="text-lg font-semibold">Free Transportation</p>
         <a target="_blank" href="https://wa.me/18092056364" class="flex items-center justify-center mt-2 text-lg font-bold text-white bg-[#25D366] px-4 py-2 rounded-lg shadow-lg">
