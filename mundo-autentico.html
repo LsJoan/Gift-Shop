@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Auténtico - Tienda de Souvenirs en Punta Cana</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome para el icono de WhatsApp -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Favicon (Ejemplo) -->
+    <link rel="icon" href="https://placehold.co/32x32/F1C40F/FFFFFF?text=MA" type="image/png">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        .store-hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://www.excursionespuntacana.com/wp-content/uploads/2019/07/PHOTO-2018-11-19-10-54-52-1024x587.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- ========== Header ========== -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-6 py-4 flex items-center justify-between relative">
+            <a href="index.html" title="Volver a la página principal" class="text-2xl text-gray-600 hover:text-amber-600 transition-colors">
+                <i class="fas fa-arrow-left"></i>
+            </a>
+            <h1 class="text-3xl md:text-4xl font-bold text-amber-600 text-center absolute left-1/2 -translate-x-1/2">Mundo Auténtico</h1>
+            <!-- Spacer to keep title centered -->
+            <div class="w-8"></div>
+        </div>
+    </header>
+
+    <!-- ========== Hero Section ========== -->
+    <section class="store-hero-bg py-32 text-white text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-6xl font-extrabold mb-4 drop-shadow-lg">Una Experiencia Cultural Inolvidable</h2>
+            <p class="text-lg md:text-xl max-w-3xl mx-auto drop-shadow-md">Más que souvenirs, te llevas la esencia de nuestra cultura.</p>
+        </div>
+    </section>
+
+    <main class="container mx-auto px-6 py-12">
+        
+        <!-- ========== Sobre la Tienda ========== -->
+        <section class="my-12">
+            <div class="bg-white p-8 md:p-12 rounded-lg shadow-lg">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Bienvenido a Mundo Auténtico</h2>
+                <div class="text-gray-600 text-lg space-y-4 text-left md:text-center">
+                    <p>En <strong>Mundo Auténtico</strong>, tu visita va más allá de una simple compra. Te invitamos a una inmersión total en la cultura dominicana. Aquí, no solo encontrarás el recuerdo perfecto, sino que también vivirás experiencias únicas que te conectarán con nuestras tradiciones.</p>
+                    <p>Observa de cerca a nuestros talentosos artesanos mientras lían a mano los famosos cigarros dominicanos, aprende sobre su proceso y descubre los secretos de su calidad. Además, deleita tu paladar con degustaciones gratuitas de nuestro exquisito ron y del tradicional licor de mamajuana. </p>
+                    <p>Somos una parada obligatoria para quienes buscan autenticidad y calidad en Punta Cana.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== Galería de Experiencias ========== -->
+        <section class="my-16">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Nuestras Experiencias</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="relative rounded-lg overflow-hidden shadow-lg group h-96">
+                    <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0c/09/ff/65.jpg" alt="[Imagen de Cigarros Hechos a Mano]" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-end p-6">
+                        <h3 class="text-white text-2xl font-bold">Cigarros Hechos a Mano</h3>
+                    </div>
+                </div>
+                <div class="relative rounded-lg overflow-hidden shadow-lg group h-96">
+                    <img src="https://cdn.getyourguide.com/image/format=auto,fit=contain,gravity=auto,quality=60,width=1440,height=650,dpr=1/tour_img/46cee121b7d253e32d1c73e2f3e8e8e79a84a0f1f06c16b48b3b64716db1f3fb.jpeg" alt="[Imagen de Degustación de Ron]" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-end p-6">
+                        <h3 class="text-white text-2xl font-bold">Degustación de Ron</h3>
+                    </div>
+                </div>
+                <div class="relative rounded-lg overflow-hidden shadow-lg group h-96">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/4b/7e/91/photo2jpg.jpg?w=1000&h=-1&s=1" alt="[Imagen de Artesanía Local]" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-end p-6">
+                        <h3 class="text-white text-2xl font-bold">Artesanía Local</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== Ubicación ========== -->
+        <section class="my-16 text-center">
+            <div class="bg-white p-8 md:p-12 rounded-lg shadow-lg">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Encuéntranos</h2>
+                <p class="text-gray-600 text-lg mb-6">Estamos ubicados en el corazón de Punta Cana, en una localización de fácil acceso para todos nuestros visitantes.</p>
+                <p class="font-semibold text-xl text-amber-700 mb-6">📍 Carretera Barceló, Km. 9, Punta Cana</p>
+                <!-- Mapa de Google Integrado -->
+                <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden border-2 border-gray-200">
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.7175647741865!2d-68.3960267!3d18.6317691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ea8933b7adfada1%3A0x70b5e314568b7f55!2sMundo%20Autentico!5e0!3m2!1ses-419!2sdo!4v1752687186506!5m2!1ses-419!2sdo" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+        
+        <!-- ========== Sección de Reserva ========== -->
+        <section id="reserva" class="my-12">
+            <div class="bg-white p-8 md:p-12 rounded-lg shadow-lg text-center">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Reserva Tu Visita Gratuita</h2>
+                <p class="text-gray-600 text-lg mb-8 max-w-2xl mx-auto">Coordina tu traslado gratuito a nuestra tienda. ¡Te esperamos para una experiencia inolvidable!</p>
+                <a href="https://wa.me/18096392114?text=Hola,%20quisiera%20reservar%20una%20visita%20a%20Mundo%20Auténtico."
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-10 rounded-full text-lg transition duration-300 transform hover:scale-105 shadow-lg">
+                    <i class="fab fa-whatsapp mr-2"></i> Reservar por WhatsApp
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========== Footer ========== -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Mundo Auténtico. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- ========== Botón Flotante de WhatsApp ========== -->
+    <a href="https://wa.me/18096392114?text=Hola,%20quisiera%20reservar%20una%20visita%20a%20Mundo%20Auténtico." 
+       target="_blank" 
+       rel="noopener noreferrer"
+       class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg transform hover:scale-110 transition-transform duration-300"
+       title="Reservar por WhatsApp">
+        <i class="fab fa-whatsapp fa-2x"></i>
+    </a>
+
+</body>
+</html>

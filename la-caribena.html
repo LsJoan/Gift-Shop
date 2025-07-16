@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Caribeña Gift Shop - Tienda de Regalos en Punta Cana</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome para el icono de WhatsApp -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Favicon (Ejemplo) -->
+    <link rel="icon" href="https://placehold.co/32x32/32CD32/FFFFFF?text=LC" type="image/png">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        .store-hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://lh3.googleusercontent.com/p/AF1QipP3y4de06NJxL6CYooSjHMUkE2BPw-MetBnlGsd=s680-w680-h510-rw');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- ========== Header ========== -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-6 py-4 flex items-center justify-between relative">
+            <a href="index.html" title="Volver a la página principal" class="text-2xl text-gray-600 hover:text-green-700 transition-colors">
+                <i class="fas fa-arrow-left"></i>
+            </a>
+            <h1 class="text-3xl md:text-4xl font-bold text-green-700 text-center absolute left-1/2 -translate-x-1/2">La Caribeña Gift Shop</h1>
+            <!-- Spacer to keep title centered -->
+            <div class="w-8"></div>
+        </div>
+    </header>
+
+    <!-- ========== Hero Section ========== -->
+    <section class="store-hero-bg py-32 text-white text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-6xl font-extrabold mb-4 drop-shadow-lg">El Encanto Artesanal del Caribe</h2>
+            <p class="text-lg md:text-xl max-w-3xl mx-auto drop-shadow-md">Donde la naturaleza y la artesanía se encuentran.</p>
+        </div>
+    </section>
+
+    <main class="container mx-auto px-6 py-12">
+        
+        <!-- ========== Sobre la Tienda ========== -->
+        <section id="acerca" class="my-12">
+            <div class="bg-white p-8 md:p-12 rounded-lg shadow-lg">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Un Oasis de Regalos y Naturaleza</h2>
+                <div class="text-gray-600 text-lg space-y-4 text-left md:text-center">
+                    <p>Bienvenido a <strong>La Caribeña Gift Shop</strong>, una tienda de regalos y artesanía donde puedes encontrar todo tipo de tesoros del Caribe. En nuestra tienda, no solo encontrarás el regalo que buscas, sino que también podrás disfrutar de un ambiente rodeado de naturaleza y muchas cosas más.</p>
+                    <p>Nuestra selección está cuidadosamente curada para ofrecerte productos auténticos que reflejan la belleza y la cultura de nuestra isla. Es el lugar perfecto para encontrar un recuerdo especial de tu viaje.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== Galería de la Tienda ========== -->
+        <section class="my-16">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Descubre Nuestros Tesoros</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="relative rounded-lg overflow-hidden shadow-lg group h-96">
+                    <img src="https://lh3.googleusercontent.com/p/AF1QipNW2WMa_JiBxuDFDLecsCUxQJOiLvkWULOcvvU1=s680-w680-h510-rw" alt="[Imagen de Artesanías del Caribe]" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-end p-6">
+                        <h3 class="text-white text-2xl font-bold">Artesanías del Caribe</h3>
+                    </div>
+                </div>
+                <div class="relative rounded-lg overflow-hidden shadow-lg group h-96">
+                    <img src="https://lh3.googleusercontent.com/p/AF1QipOZmBYSEotG9hfwG0aOptq80lMmPH9VqQrtvpJk=s680-w680-h510-rw" alt="[Imagen de Regalos Únicos]" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-end p-6">
+                        <h3 class="text-white text-2xl font-bold">Regalos Únicos</h3>
+                    </div>
+                </div>
+                <div class="relative rounded-lg overflow-hidden shadow-lg group h-96">
+                    <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrEHUwTB2ikSom5A-4mkTe-i_xv3Wrmcle5OhIxmeaiYRCKJ3sCcl4N2lfcro8pbt6vn6emyYEzv-HMCQNIk2g7XTiIVrqnEZ0hzv4F9rm3FG5IR5hK2JuIy-e2nZsNcR5BZtLt8Q=s680-w680-h510-rw" alt="[Imagen del Ambiente Natural]" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-end p-6">
+                        <h3 class="text-white text-2xl font-bold">Ambiente Natural</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== Ubicación ========== -->
+        <section class="my-16 text-center">
+            <div class="bg-white p-8 md:p-12 rounded-lg shadow-lg">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Nuestra Ubicación</h2>
+                <p class="text-gray-600 text-lg mb-6">Estamos convenientemente ubicados para que tu visita sea fácil y placentera.</p>
+                <p class="font-semibold text-xl text-green-700 mb-6">📍 Cerca del Hotel Bahia Principe, Punta Cana</p>
+                <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden border-2 border-gray-200">
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11737.936454553912!2d-68.47147614400959!3d18.713502198863992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ea8ebc58febd16b%3A0xce752b40a9648aaf!2sCaribe%C3%B1a%20Gift%20Shop!5e0!3m2!1ses-419!2sdo!4v1752697559773!5m2!1ses-419!2sdo" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== Sección de Reserva ========== -->
+        <section id="reserva" class="my-12">
+            <div class="bg-white p-8 md:p-12 rounded-lg shadow-lg text-center">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Reserva Tu Visita Gratuita</h2>
+                <p class="text-gray-600 text-lg mb-8 max-w-2xl mx-auto">Coordina tu traslado gratuito a nuestra tienda y disfruta de un ambiente único.</p>
+                <a href="https://wa.me/18096392114?text=Hola,%20quisiera%20reservar%20una%20visita%20a%20La%20Caribeña%20Gift%20Shop."
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-10 rounded-full text-lg transition duration-300 transform hover:scale-105 shadow-lg">
+                    <i class="fab fa-whatsapp mr-2"></i> Reservar por WhatsApp
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========== Footer ========== -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 La Caribeña Gift Shop. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- ========== Botón Flotante de WhatsApp ========== -->
+    <a href="https://wa.me/18096392114?text=Hola,%20quisiera%20más%20información%20sobre%20La%20Caribeña%20Gift%20Shop." 
+       target="_blank" 
+       rel="noopener noreferrer"
+       class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg transform hover:scale-110 transition-transform duration-300"
+       title="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp fa-2x"></i>
+    </a>
+
+</body>
+</html>

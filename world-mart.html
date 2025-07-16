@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Mart Souvenirs - Tienda de Regalos en Punta Cana</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome para el icono de WhatsApp -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Favicon (Ejemplo) -->
+    <link rel="icon" href="https://placehold.co/32x32/E74C3C/FFFFFF?text=WM" type="image/png">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        .store-hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/14/ca/f6/0b.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- ========== Header ========== -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-6 py-4 flex items-center justify-between relative">
+            <a href="index.html" title="Volver a la página principal" class="text-2xl text-gray-600 hover:text-red-700 transition-colors">
+                <i class="fas fa-arrow-left"></i>
+            </a>
+            <h1 class="text-3xl md:text-4xl font-bold text-red-700 text-center absolute left-1/2 -translate-x-1/2">World Mart Souvenirs</h1>
+            <!-- Spacer to keep title centered -->
+            <div class="w-8"></div>
+        </div>
+    </header>
+
+    <!-- ========== Hero Section ========== -->
+    <section class="store-hero-bg py-32 text-white text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-6xl font-extrabold mb-4 drop-shadow-lg">El Legado Artístico de Punta Cana</h2>
+            <p class="text-lg md:text-xl max-w-3xl mx-auto drop-shadow-md">Una conexión más profunda con el alma creativa de la región.</p>
+        </div>
+    </section>
+
+    <main class="container mx-auto px-6 py-12">
+        
+        <!-- ========== Acerca de la Tienda ========== -->
+        <section id="acerca" class="my-12">
+            <div class="bg-white p-8 md:p-12 rounded-lg shadow-lg">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Una Experiencia Cautivadora</h2>
+                <div class="text-gray-600 text-lg space-y-4 text-left md:text-center">
+                    <p>Bienvenido a <strong>World Mart Souvenirs</strong>. Tanto si eres un coleccionista, un entusiasta de la cultura o simplemente buscas un recuerdo significativo, nuestra visita guiada te ofrece una experiencia única e inmersiva.</p>
+                    <p>Nuestro objetivo es que no te lleves sólo un objeto, sino una conexión más profunda con el legado artístico de la región. Cada pieza en nuestra tienda cuenta una historia y representa el alma creativa de Punta Cana.</p>
+                    <p>Descubre tesoros únicos y llévate a casa un pedazo de nuestra historia, con un nuevo aprecio por la artesanía y la cultura local.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== Galería de Productos ========== -->
+        <section class="my-16">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Un Mundo de Recuerdos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="relative rounded-lg overflow-hidden shadow-lg group h-96">
+                    <img src="https://powertraveller.com/wp-content/uploads/2024/09/4_world-mart-souvenirs-store-guided-tour.jpg" alt="[Imagen de Colecciones Exclusivas]" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-end p-6">
+                        <h3 class="text-white text-2xl font-bold">Colecciones Exclusivas</h3>
+                    </div>
+                </div>
+                <div class="relative rounded-lg overflow-hidden shadow-lg group h-96">
+                    <img src="https://cdn.getyourguide.com/image/format=auto,fit=crop,gravity=auto,quality=60,width=450,height=450,dpr=2/tour_img/84bdd5dbb4f27550b5d9b96e56e8a245816483c95bf08c80bc474330e170af14.jpg" alt="[Imagen de Conexión Cultural]" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-end p-6">
+                        <h3 class="text-white text-2xl font-bold">Conexión Cultural</h3>
+                    </div>
+                </div>
+                <div class="relative rounded-lg overflow-hidden shadow-lg group h-96">
+                    <img src="https://powertraveller.com/wp-content/uploads/2024/09/3_world-mart-souvenirs-store-guided-tour.jpg" alt="[Imagen de Recuerdos Significativos]" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-end p-6">
+                        <h3 class="text-white text-2xl font-bold">Recuerdos Significativos</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== Ubicación ========== -->
+        <section class="my-16 text-center">
+            <div class="bg-white p-8 md:p-12 rounded-lg shadow-lg">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Visítanos</h2>
+                <p class="text-gray-600 text-lg mb-6">Encuéntranos en una ubicación privilegiada de Punta Cana y déjate guiar por nuestro mundo de arte y cultura.</p>
+                <p class="font-semibold text-xl text-red-700 mb-6">📍 Dirección de World Mart, Punta Cana</p>
+                <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden border-2 border-gray-200">
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1646.9541719527888!2d-68.47763224268503!3d18.7132046401756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ea8eb2e6bda4fc7%3A0x10dad704757a1735!2sWORLD%20MART!5e0!3m2!1ses-419!2sdo!4v1752696001812!5m2!1ses-419!2sdo" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== Sección de Reserva ========== -->
+        <section id="reserva" class="my-12">
+            <div class="bg-white p-8 md:p-12 rounded-lg shadow-lg text-center">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Reserva Tu Visita Gratuita</h2>
+                <p class="text-gray-600 text-lg mb-8 max-w-2xl mx-auto">Coordina tu traslado gratuito a nuestra tienda y disfruta de una experiencia de compra única.</p>
+                <a href="https://wa.me/18096392114?text=Hola,%20quisiera%20reservar%20una%20visita%20a%20World%20Mart%20Souvenirs."
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-10 rounded-full text-lg transition duration-300 transform hover:scale-105 shadow-lg">
+                    <i class="fab fa-whatsapp mr-2"></i> Reservar por WhatsApp
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========== Footer ========== -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 World Mart Souvenirs. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- ========== Botón Flotante de WhatsApp ========== -->
+    <a href="https://wa.me/18096392114?text=Hola,%20quisiera%20información%20sobre%20la%20visita%20guiada%20en%20World%20Mart%20Souvenirs." 
+       target="_blank" 
+       rel="noopener noreferrer"
+       class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg transform hover:scale-110 transition-transform duration-300"
+       title="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp fa-2x"></i>
+    </a>
+
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plaza Bibijagua - Mercado Artesanal en Punta Cana</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome para los iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Favicon (Ejemplo) -->
+    <link rel="icon" href="https://placehold.co/32x32/1ABC9C/FFFFFF?text=PB" type="image/png">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        .store-hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://img.puntacanatours.com/bibijagua.webp');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- ========== Header ========== -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-6 py-4 flex items-center justify-between relative">
+            <a href="index.html" title="Volver a la página principal" class="text-2xl text-gray-600 hover:text-cyan-700 transition-colors">
+                <i class="fas fa-arrow-left"></i>
+            </a>
+            <h1 class="text-3xl md:text-4xl font-bold text-cyan-700 text-center absolute left-1/2 -translate-x-1/2">Plaza Bibijagua</h1>
+            <!-- Spacer to keep title centered -->
+            <div class="w-8"></div>
+        </div>
+    </header>
+
+    <!-- ========== Hero Section ========== -->
+    <section class="store-hero-bg py-32 text-white text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-6xl font-extrabold mb-4 drop-shadow-lg">El Corazón Artesanal de Bávaro</h2>
+            <p class="text-lg md:text-xl max-w-3xl mx-auto drop-shadow-md">Un vibrante mercado a orillas del mar donde encontrarás tesoros únicos.</p>
+        </div>
+    </section>
+
+    <main class="container mx-auto px-6 py-12">
+        
+        <!-- ========== Acerca del Mercado ========== -->
+        <section id="acerca" class="my-12">
+            <div class="bg-white p-8 md:p-12 rounded-lg shadow-lg">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Un Mundo de Colores y Tradición</h2>
+                <div class="text-gray-600 text-lg space-y-4 text-left md:text-center">
+                    <p>Bienvenido a la <strong>Plaza Bibijagua</strong>, el mercado artesanal más grande y animado de Bávaro. Ubicado directamente sobre la arena de la playa, nuestro mercado es un laberinto de pasillos llenos de color, vida y cultura dominicana.</p>
+                    <p>Con más de 100 puestos, aquí encontrarás una increíble variedad de souvenirs, ropa de playa, arte local, joyas de larimar y ámbar, y mucho más. Es el lugar perfecto para sumergirte en la cultura local y encontrar ese recuerdo especial de tu viaje a Punta Cana.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== La Experiencia de Compra ========== -->
+        <section class="my-16 text-center">
+             <h2 class="text-3xl font-bold text-gray-800 mb-8">La Experiencia de Compra</h2>
+             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                 <div class="bg-white p-8 rounded-lg shadow-lg flex flex-col items-center">
+                    <div class="bg-cyan-100 text-cyan-700 rounded-full p-4 mb-4">
+                        <i class="fas fa-shopping-basket fa-2x"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Variedad Infinita</h3>
+                    <p class="text-gray-600">Desde pequeñas artesanías hasta grandes pinturas, la diversidad de productos te sorprenderá. ¡Hay algo para todos los gustos y presupuestos!</p>
+                 </div>
+                 <div class="bg-white p-8 rounded-lg shadow-lg flex flex-col items-center">
+                    <div class="bg-cyan-100 text-cyan-700 rounded-full p-4 mb-4">
+                         <i class="fas fa-handshake fa-2x"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">El Arte de Regatear</h3>
+                    <p class="text-gray-600">¡Prepárate para negociar! Regatear es parte de la experiencia en Plaza Bibijagua. Interactúa con los vendedores y consigue el mejor precio para tus tesoros.</p>
+                 </div>
+             </div>
+        </section>
+
+        <!-- ========== Galería de Productos ========== -->
+        <section class="my-16">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Tesoros que te Esperan</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="relative rounded-lg overflow-hidden shadow-lg group h-64">
+                    <img src="https://everythingpuntacana.com/wp-content/uploads/2024/03/playa-bibijagua-punta-cana-850x478.webp" alt="[Imagen de Arte Local]" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center p-4">
+                        <h3 class="text-white text-xl font-bold text-center">Arte Local</h3>
+                    </div>
+                </div>
+                 <div class="relative rounded-lg overflow-hidden shadow-lg group h-64">
+                    <img src="https://images.myguide-cdn.com/dominicanrepublic/companies/bibijagua-gift-shop/large/bibijagua-gift-shop-256579.jpg" alt="[Imagen de Joyas de Larimar]" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center p-4">
+                        <h3 class="text-white text-xl font-bold text-center">Joyas de Larimar</h3>
+                    </div>
+                </div>
+                 <div class="relative rounded-lg overflow-hidden shadow-lg group h-64">
+                    <img src="https://us.123rf.com/450wm/pashapixel/pashapixel1905/pashapixel190500819/128209958-bavaro-punta-cana-dominican-republic-4-february-2019-souvenirs-shops-with-different-goods-on.jpg" alt="[Imagen de Ropa de Playa]" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center p-4">
+                        <h3 class="text-white text-xl font-bold text-center">Ropa de Playa</h3>
+                    </div>
+                </div>
+                 <div class="relative rounded-lg overflow-hidden shadow-lg group h-64">
+                    <img src="https://previews.123rf.com/images/pashapixel/pashapixel1905/pashapixel190500719/128209927-bavaro-punta-cana-dominican-republic-4-february-2019-souvenirs-shops-with-different-goods-on.jpg" alt="[Imagen de Artesanía Variada]" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center p-4">
+                        <h3 class="text-white text-xl font-bold text-center">Artesanía Variada</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== Ubicación ========== -->
+        <section class="my-16 text-center">
+            <div class="bg-white p-8 md:p-12 rounded-lg shadow-lg">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">¿Cómo Llegar?</h2>
+                <p class="text-gray-600 text-lg mb-6">Nos encontramos directamente en la famosa Playa Bibijagua, en el corazón de Bávaro.</p>
+                <p class="font-semibold text-xl text-cyan-700 mb-6">📍 Playa Bibijagua, Bávaro, Punta Cana</p>
+                <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden border-2 border-gray-200">
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2169.68305603009!2d-68.40217604133755!3d18.669854078313975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ea8ecc1c049c767%3A0xea81b0c5b6d891e0!2sPlaza%20Bibijagua!5e0!3m2!1ses-419!2sdo!4v1752698912632!5m2!1ses-419!2sdo" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== Sección de Contacto ========== -->
+        <section id="reserva" class="my-12">
+            <div class="bg-white p-8 md:p-12 rounded-lg shadow-lg text-center">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">¿Tienes Consultas?</h2>
+                <p class="text-gray-600 text-lg mb-8 max-w-2xl mx-auto">Si tienes alguna pregunta sobre el mercado o los productos, no dudes en contactarnos.</p>
+                <a href="https://wa.me/18096392114?text=Hola,%20quisiera%20saber%20más%20sobre%20la%20Plaza%20Bibijagua."
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-10 rounded-full text-lg transition duration-300 transform hover:scale-105 shadow-lg">
+                    <i class="fab fa-whatsapp mr-2"></i> Contactar por WhatsApp
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========== Footer ========== -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Plaza Bibijagua. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- ========== Botón Flotante de WhatsApp ========== -->
+    <a href="https://wa.me/18096392114?text=Hola,%20quisiera%20saber%20más%20sobre%20la%20Plaza%20Bibijagua." 
+       target="_blank" 
+       rel="noopener noreferrer"
+       class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg transform hover:scale-110 transition-transform duration-300"
+       title="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp fa-2x"></i>
+    </a>
+
+</body>
+</html>
