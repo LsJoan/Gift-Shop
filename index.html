@@ -1,108 +1,322 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Souvenirs & Gift Shop</title>
+    <title>Recuerdos de Punta Cana | Tesoros del Caribe</title>
+    
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen relative">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome para Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    
+    <!-- Favicon (Ejemplo) -->
+    <link rel="icon" href="https://placehold.co/32x32/06B6D4/FFFFFF?text=PC" type="image/png">
 
-     <header class="text-center my-6">
-        <h1 class="text-4xl font-bold text-gray-800">Souvenirs & Gift Shop</h1>
-        <h2 class="text-xl text-gray-600">World Mart</h2>
+    <style>
+        /* Usando las fuentes importadas */
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        /* Efecto de fondo para la sección de héroe */
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://realtytravelsrd.com/wp-content/uploads/2024/08/imagen-vista-playa-de-punta-cana-rd.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- ========== Header y Navegación ========== -->
+    <header id="home" class="bg-white/80 backdrop-blur-md shadow-md fixed top-0 left-0 right-0 z-50">
+        <nav class="container mx-auto px-4 sm:px-6 py-3 flex justify-between items-center">
+            <a href="#home" class="text-xl sm:text-2xl font-bold text-cyan-700">Tesoros del Caribe</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#productos" class="text-gray-600 hover:text-cyan-600 transition duration-300">Productos</a>
+                <a href="#tiendas" class="text-gray-600 hover:text-cyan-600 transition duration-300">Tiendas</a>
+                <a href="#reserva" class="text-gray-600 hover:text-cyan-600 transition duration-300">Reservas</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <!-- Menú Móvil -->
+        <div id="mobile-menu" class="hidden md:hidden border-t border-gray-200">
+            <a href="#productos" class="block py-3 px-4 text-base text-gray-700 hover:bg-cyan-50">Productos</a>
+            <a href="#tiendas" class="block py-3 px-4 text-base text-gray-700 hover:bg-cyan-50">Tiendas</a>
+            <a href="#reserva" class="block py-3 px-4 text-base text-gray-700 hover:bg-cyan-50">Reservas</a>
+        </div>
     </header>
-        <div id="carouselExample" class="carousel slide w-full max-w-2xl" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/10/04/38/67.jpg" class="d-block w-100" alt="Shop Image 0">
-            </div>
-            <div class="carousel-item">
-                <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/11/cc/de/89.jpg" class="d-block w-100" alt="Shop Image 1">
-            </div>
-            <div class="carousel-item">
-                <img src="https://thumbs.dreamstime.com/b/recuerdos-locales-en-punta-cana-rep%C3%BAblica-dominicana-38424946.jpg" class="d-block w-100" alt="Shop Image 2">
-            </div>
-            <div class="carousel-item">
-                <img src="https://cdn.getyourguide.com/img/tour/cc0a4e2f3008f192aa746b95e002d2fdf3f28f89d6b41ea878fe0a9721436469.jpg/61.jpg" class="d-block w-100" alt="Shop Image 3">
-            </div>
-            <div class="carousel-item">
-                <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/11/cc/a6/66.jpg" class="d-block w-100" alt="Shop Image 4">
-            </div>
-            <div class="carousel-item">
-                <img src="https://www.pelago.com/img/products/DO-Dominican%20Republic/guided-shopping-tour-to-worldmart-souvenirs-store/159ef68b-7127-4f24-b53f-72e73b872b71_guided-shopping-tour-to-worldmart-souvenirs-store.jpg" class="d-block w-100" alt="Shop Image 5">
-            </div>
-            <div class="carousel-item">
-                <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/11/cc/d9/f7.jpg" class="d-block w-100" alt="Shop Image 6">
-            </div>
-            <div class="carousel-item">
-                <img src="https://previews.123rf.com/images/zhukovsky/zhukovsky1501/zhukovsky150100090/35207159-recuerdos-locales-en-punta-cana-rep%C3%BAblica-dominicana.jpg" class="d-block w-100" alt="Shop Image 7">
-            </div>
-            <div class="carousel-item">
-                <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/14/ca/f6/0b.jpg" class="d-block w-100" alt="Shop Image 8">
-            </div>
-            <div class="carousel-item">
-                <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/14/ca/f5/e2.jpg" class="d-block w-100" alt="Shop Image 9">
-            </div>
-            <div class="carousel-item">
-                <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/09/bc/90/f4.jpg" class="d-block w-100" alt="Shop Image 10">
-            </div>
-            <div class="carousel-item">
-                <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/10/04/41/11.jpg" class="d-block w-100" alt="Shop Image 11">
-            </div>
-            <div class="carousel-item">
-                <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/10/04/3b/f1.jpg" class="d-block w-100" alt="Shop Image 12">
-            </div>
-            <div class="carousel-item">
-                <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/10/3d/62/a9.jpg" class="d-block w-100" alt="Shop Image 13">
-            </div>
+
+    <!-- ========== Sección Héroe ========== -->
+    <section class="hero-bg h-screen flex items-center justify-center text-white text-center px-4">
+        <div class="container mx-auto">
+            <h1 class="text-4xl sm:text-5xl lg:text-7xl font-extrabold mb-4 drop-shadow-lg">El Alma de Punta Cana en un Recuerdo</h1>
+            <p class="text-base sm:text-lg md:text-xl max-w-3xl mx-auto mb-8 drop-shadow-md">Descubre artesanías únicas y sabores auténticos que cuentan la historia de nuestra isla.</p>
+            <a href="#productos" class="bg-cyan-600 hover:bg-cyan-700 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 transform hover:scale-105">Explorar Souvenirs</a>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-    </div>
-  
-    <section class="w-full text-center p-4 bg-gray-800 text-white relative z-10">
-        <p class="text-lg font-semibold">Free Transportation</p>
-        <a target="_blank" href="https://wa.me/18096392114" class="flex items-center justify-center mt-2 text-lg font-bold text-white bg-[#25D366] px-4 py-2 rounded-lg shadow-lg">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="w-6 h-6 mr-2"> BOOK +1 809 639 2114
-        </a>
     </section>
-    
-    
-    <div class="my-6 w-full max-w-3xl mx-auto">
-        <h3 class="text-xl font-semibold text-gray-800 text-center mb-4">Location Map</h3>
-        <div style="text-align:center;">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d11323.679332572887!2d-68.47704193685946!3d18.71666620206451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d18.720693999999998!2d-68.4662986!4m5!1s0x8ea8eb2e6bda4fc7%3A0x10dad704757a1735!2sWORLD%20MART!3m2!1d18.7130822!2d-68.4773992!5e0!3m2!1ses!2sdo!4v1742672189412!5m2!1ses!2sdo" 
-                width="100%" 
-                height="400" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+
+    <main class="container mx-auto px-4 sm:px-6 py-12 sm:py-16">
+        <!-- ========== Sección de Productos Destacados ========== -->
+        <section id="productos" class="my-12 sm:my-16">
+            <h2 class="text-3xl sm:text-4xl text-center font-bold text-cyan-800 mb-12">Nuestros Tesoros Más Preciados</h2>
+            <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8">
+                <!-- Producto 1: Larimar -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 group">
+                    <div class="relative aspect-square">
+                        <img src="https://laminadeplata.com/wp-content/uploads/2022/06/DSC03515-4-EDITADO.jpg" alt="[Imagen de Joyería de Larimar]" class="w-full h-full object-cover absolute top-0 left-0 transition-opacity duration-500 ease-in-out group-hover:opacity-0">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLV1dQCwFCft7tldNWkchTgtXuwga6XiKXlpl4EnQ08V3al3ZH-L1vgdq6Rv_RlOfMhX47NqIA_UCZN3RjeJ6GZCz6o_grJ3g5C8w_9KhWYRdsRTWfR0SC78fJRSysQao3x3iAsFIoqn8/s1600/Larimar+canada.jpg" alt="[Imagen de Joyería de Larimar en detalle]" class="w-full h-full object-cover absolute top-0 left-0 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
+                    </div>
+                    <div class="p-3 sm:p-6">
+                        <h3 class="text-base sm:text-xl font-bold text-cyan-700 mb-2">Joyería de Larimar</h3>
+                        <p class="text-xs sm:text-base text-gray-600">La gema del Caribe, una piedra semipreciosa de un azul celestial que solo se encuentra en nuestras tierras.</p>
+                    </div>
+                </div>
+                <!-- Producto 2: Ron Dominicano -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 group">
+                    <div class="relative aspect-square">
+                        <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/10/04/41/11.jpg" alt="[Imagen de Botellas de Ron Añejo]" class="w-full h-full object-cover absolute top-0 left-0 transition-opacity duration-500 ease-in-out group-hover:opacity-0">
+                        <img src="https://revistacontactord.com/wp-content/uploads/2023/03/WhatsApp-Image-2023-03-16-at-8.46.49-AM-1024x682.jpeg" alt="[Imagen de Botellas de Ron en detalle]" class="w-full h-full object-cover absolute top-0 left-0 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
+                    </div>
+                    <div class="p-3 sm:p-6">
+                        <h3 class="text-base sm:text-xl font-bold text-cyan-700 mb-2">Ron Dominicano</h3>
+                        <p class="text-xs sm:text-base text-gray-600">Reconocido mundialmente por su suavidad y complejidad. Cada botella es una celebración.</p>
+                    </div>
+                </div>
+                <!-- Producto 3: Cigarros Premium -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 group">
+                    <div class="relative aspect-square">
+                        <img src="https://www.barcelo.com/guia-turismo/wp-content/uploads/2020/11/republica-dominicana_tabaco-dominicano_888.jpg" alt="[Imagen de Cigarros Hechos a Mano]" class="w-full h-full object-cover absolute top-0 left-0 transition-opacity duration-500 ease-in-out group-hover:opacity-0">
+                        <img src="https://burkinatherevist.com/wp-content/uploads/2022/10/82DE924D-E83F-4A85-8538-878BA85D40B4-2-1536x1536.jpg" alt="[Imagen de Cigarros en detalle]" class="w-full h-full object-cover absolute top-0 left-0 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
+                    </div>
+                    <div class="p-3 sm:p-6">
+                        <h3 class="text-base sm:text-xl font-bold text-cyan-700 mb-2">Cigarros Premium</h3>
+                        <p class="text-xs sm:text-base text-gray-600">Elaborados a mano por maestros artesanos, ofrecen una experiencia de fumada inigualable.</p>
+                    </div>
+                </div>
+                <!-- Producto 4: Café Orgánico -->
+                 <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 group">
+                    <div class="relative aspect-square">
+                        <img src="https://everythingpuntacana.com/wp-content/uploads/2020/08/dominican-coffee-850x496.jpg" alt="[Imagen de Granos de Café Tostado]" class="w-full h-full object-cover absolute top-0 left-0 transition-opacity duration-500 ease-in-out group-hover:opacity-0">
+                        <img src="https://resources.diariolibre.com/images/binrepository/shutterstock-297836078_11648402_20190517112540-focus-0-0-608-342.jpg" alt="[Imagen de Café en detalle]" class="w-full h-full object-cover absolute top-0 left-0 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
+                    </div>
+                    <div class="p-3 sm:p-6">
+                        <h3 class="text-base sm:text-xl font-bold text-cyan-700 mb-2">Café de Altura</h3>
+                        <p class="text-xs sm:text-base text-gray-600">Cultivado en las montañas, te despertará con el aroma y el sabor del auténtico Caribe.</p>
+                    </div>
+                </div>
+                 <!-- Producto 5: Arte Taíno -->
+                 <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 group">
+                    <div class="relative aspect-square">
+                        <img src="https://www.lopesancostabavaro.com/wp-content/uploads/2019/05/souvenirs-punta-cana.jpg" alt="[Imagen de Artesanía Taína]" class="w-full h-full object-cover absolute top-0 left-0 transition-opacity duration-500 ease-in-out group-hover:opacity-0">
+                        <img src="https://thumbs.dreamstime.com/b/recuerdos-del-caribe-en-la-rep%C3%BAblica-dominicana-49618943.jpg" alt="[Imagen de Artesanía Taína en detalle]" class="w-full h-full object-cover absolute top-0 left-0 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
+                    </div>
+                    <div class="p-3 sm:p-6">
+                        <h3 class="text-base sm:text-xl font-bold text-cyan-700 mb-2">Arte Taíno</h3>
+                        <p class="text-xs sm:text-base text-gray-600">Conéctate con nuestras raíces a través de réplicas que simbolizan la rica historia de la isla.</p>
+                    </div>
+                </div>
+                 <!-- Producto 6: Mamajuana -->
+                 <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 group">
+                    <div class="relative aspect-square">
+                        <img src="https://everythingpuntacana.com/wp-content/uploads/2018/04/Site-9.jpg" alt="[Imagen de Botella de Mamajuana]" class="w-full h-full object-cover absolute top-0 left-0 transition-opacity duration-500 ease-in-out group-hover:opacity-0">
+                        <img src="https://visitdominicanrepublic.com/wp-content/uploads/2019/08/mama-juana-sale-santo-domingo-shutterstock_hero.jpg" alt="[Imagen de Mamajuana en detalle]" class="w-full h-full object-cover absolute top-0 left-0 opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100">
+                    </div>
+                    <div class="p-3 sm:p-6">
+                        <h3 class="text-base sm:text-xl font-bold text-cyan-700 mb-2">Mamajuana</h3>
+                        <p class="text-xs sm:text-base text-gray-600">La legendaria bebida dominicana. Una mezcla de raíces y hierbas con ron, vino y miel.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== Sección de Tiendas Recomendadas ========== -->
+        <section id="tiendas" class="my-12 sm:my-24">
+            <h2 class="text-3xl sm:text-4xl text-center font-bold text-cyan-800 mb-12">Visita Nuestras Tiendas</h2>
+            
+            <!-- Tienda 1 -->
+            <div class="flex flex-col md:flex-row items-center bg-white rounded-lg shadow-xl overflow-hidden mb-12">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipP3y4de06NJxL6CYooSjHMUkE2BPw-MetBnlGsd=s680-w680-h510-rw" alt="[Imagen de la tienda La Caribeña Gift Shop]" class="w-full md:w-1/2 h-64 md:h-auto object-cover">
+                <div class="p-6 md:p-10">
+                    <h3 class="text-2xl sm:text-3xl font-bold text-cyan-700 mb-4">
+                        <a href="la-caribena.html" class="inline-block transition-all duration-300 hover:text-amber-500 hover:-translate-y-1">La Caribeña Gift Shop</a>
+                    </h3>
+                    <p class="text-gray-600 mb-4">Caribeña Gift Shop tienda de regalos y artesanal, en esta tienda puedes encontrar todo tipo de artesanías del caribe y cualquier regalo que guste es una tienda donde puede disfrutar de la naturaleza y muchas cosas mas.</p>
+                    <p class="font-semibold text-gray-700">Ubicacion: Cerca del Hotel Bahia Principe</p>
+                    <div class="mt-6">
+                        <a href="la-caribena.html" class="inline-block bg-amber-500 text-white font-bold text-sm py-2 px-4 rounded-full shadow-lg hover:bg-amber-600 transition-all duration-300 hover:-translate-y-1">
+                            <i class="fas fa-bus mr-2"></i>
+                            Transporte Gratuito
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tienda 2 -->
+            <div class="flex flex-col md:flex-row-reverse items-center bg-white rounded-lg shadow-xl overflow-hidden mb-12">
+                <img src="https://www.excursionespuntacana.com/wp-content/uploads/2019/07/PHOTO-2018-11-19-10-54-52-1024x587.jpg" alt="[Imagen de la tienda Mundo Auténtico]" class="w-full md:w-1/2 h-64 md:h-auto object-cover">
+                <div class="p-6 md:p-10">
+                    <h3 class="text-2xl sm:text-3xl font-bold text-cyan-700 mb-4">
+                        <a href="mundo-autentico.html" class="inline-block transition-all duration-300 hover:text-amber-500 hover:-translate-y-1">Mundo Auténtico</a>
+                    </h3>
+                    <p class="text-gray-600 mb-4">Más que una tienda, es una inmersión cultural. Observa a los artesanos en acción, degusta productos locales y descubre la historia detrás de cada pieza. Una parada obligatoria.</p>
+                    <p class="font-semibold text-gray-700">Ubicación: Carretera Barceló, Punta Cana</p>
+                    <div class="mt-6">
+                        <a href="mundo-autentico.html" class="inline-block bg-cyan-600 text-white font-bold text-sm py-2 px-4 rounded-full shadow-lg hover:bg-cyan-700 transition-all duration-300 hover:-translate-y-1">
+                            <i class="fas fa-eye mr-2"></i>
+                            Visitar
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tienda 3 -->
+            <div class="flex flex-col md:flex-row items-center bg-white rounded-lg shadow-xl overflow-hidden mb-12">
+                <img src="https://img.puntacanatours.com/bibijagua.webp" alt="[Imagen de la tienda Plaza Bibijagua]" class="w-full md:w-1/2 h-64 md:h-auto object-cover">
+                <div class="p-6 md:p-10">
+                    <h3 class="text-2xl sm:text-3xl font-bold text-cyan-700 mb-4">
+                        <a href="plaza-bibijagua.html" class="inline-block transition-all duration-300 hover:text-amber-500 hover:-translate-y-1">Plaza Bibijagua</a>
+                    </h3>
+                    <p class="text-gray-600 mb-4">El mercado artesanal más grande de Bávaro, ubicado junto a la playa. Aquí encontrarás cientos de puestos con una increíble variedad de souvenirs, ropa y arte local. ¡Ideal para encontrar tesoros escondidos!</p>
+                    <p class="font-semibold text-gray-700">Ubicación: Playa Bibijagua, Bávaro</p>
+                    <div class="mt-6">
+                        <a href="plaza-bibijagua.html" class="inline-block bg-cyan-600 text-white font-bold text-sm py-2 px-4 rounded-full shadow-lg hover:bg-cyan-700 transition-all duration-300 hover:-translate-y-1">
+                            <i class="fas fa-eye mr-2"></i>
+                            Visitar
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tienda 4 -->
+            <div class="flex flex-col md:flex-row-reverse items-center bg-white rounded-lg shadow-xl overflow-hidden mb-12">
+                <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/10/0b/3e/98.jpg" alt="[Imagen de la tienda Taino Gift Shop]" class="w-full md:w-1/2 h-64 md:h-auto object-cover">
+                <div class="p-6 md:p-10">
+                    <h3 class="text-2xl sm:text-3xl font-bold text-cyan-700 mb-4">
+                        <a href="taino-gift-shop.html" class="inline-block transition-all duration-300 hover:text-amber-500 hover:-translate-y-1">Taino Gift Shop</a>
+                    </h3>
+                    <p class="text-gray-600 mb-4">Tienda de regalos en Punta Cana. Compras de ron, mamajuana, café, chocolate, cosméticos naturales, ropa de playa, joyas y miles de cosas y artilugios interesantes más.</p>
+                    <p class="font-semibold text-gray-700">Servicios: City tour, traslados gratuitos desde cualquier hotel en Bavaro, Punta Cana, Uvero Alto. Todos los días.</p>
+                    <div class="mt-6">
+                        <a href="taino-gift-shop.html" class="inline-block bg-amber-500 text-white font-bold text-sm py-2 px-4 rounded-full shadow-lg hover:bg-amber-600 transition-all duration-300 hover:-translate-y-1">
+                            <i class="fas fa-bus mr-2"></i>
+                            Transporte Gratuito
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tienda 5 -->
+            <div class="flex flex-col md:flex-row items-center bg-white rounded-lg shadow-xl overflow-hidden">
+                <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/14/ca/f6/0b.jpg" alt="[Imagen de la tienda World Mart Souvenirs]" class="w-full md:w-1/2 h-64 md:h-auto object-cover">
+                <div class="p-6 md:p-10">
+                    <h3 class="text-2xl sm:text-3xl font-bold text-cyan-700 mb-4">
+                        <a href="world-mart.html" class="inline-block transition-all duration-300 hover:text-amber-500 hover:-translate-y-1">World Mart Souvenirs</a>
+                    </h3>
+                    <p class="text-gray-600 mb-4">Tanto si es un coleccionista, un entusiasta de la cultura o simplemente busca un recuerdo significativo, la visita guiada a la tienda World Mart Souvenirs le ofrece una experiencia cautivadora. No se lleve sólo un recuerdo, sino una conexión más profunda con el legado artístico de la región y un nuevo aprecio por el alma creativa de Punta Cana.</p>
+                    <p class="font-semibold text-gray-700">Ubicacion: Cerca del Hotel Bahia Principe</p>
+                    <div class="mt-6">
+                        <a href="world-mart.html" class="inline-block bg-amber-500 text-white font-bold text-sm py-2 px-4 rounded-full shadow-lg hover:bg-amber-600 transition-all duration-300 hover:-translate-y-1">
+                            <i class="fas fa-bus mr-2"></i>
+                            Transporte Gratuito
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== Sección de Reserva ========== -->
+        <section id="reserva" class="my-12 sm:my-16 bg-white p-6 sm:p-8 md:p-16 rounded-lg shadow-lg text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold text-cyan-800 mb-4">Reserva Tu Visita</h2>
+            <p class="text-gray-600 mb-8 max-w-2xl mx-auto">¿Quieres coordinar un tour o un traslado gratuito a una de nuestras tiendas? Contáctanos directamente por WhatsApp para una atención rápida y personalizada.</p>
+            <a href="https://wa.me/18096392114?text=Hola,%20quisiera%20reservar%20una%20visita%20a%20una%20de%20las%20tiendas."
+               target="_blank"
+               rel="noopener noreferrer"
+               class="inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-10 rounded-full text-lg transition duration-300 transform hover:scale-105 shadow-lg">
+                <i class="fab fa-whatsapp mr-2"></i> Reservar por WhatsApp
+            </a>
+        </section>
+    </main>
+
+    <!-- ========== Footer ========== -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Tesoros del Caribe. Todos los derechos reservados.</p>
+            <p class="text-sm text-gray-400 mt-2">Promoviendo la cultura y artesanía de Punta Cana.</p>
         </div>
-    </div>
+    </footer>
     
-    <div class="my-6 w-full max-w-3xl mx-auto">
-        <h3 class="text-xl font-semibold text-gray-800 text-center mb-4">TripAdvisor Review</h3>
-        <div style="text-align:center;">
-            <iframe 
-                src="https://www.tripadvisor.es/ShowUserReviews-g147293-d25466055-r922146788-Real_Tours_Punta_Cana-Punta_Cana_La_Altagracia_Province_Dominican_Republic.html#REVIEWS" 
-                width="100%" 
-                height="400" 
-                style="border: none;" 
-                title="TripAdvisor Review World Mart Souvenirs Store">
-            </iframe>
-        </div>
-    </div>
+    <!-- Botón de Volver Arriba -->
+    <button id="to-top-button" title="Volver arriba" class="hidden fixed bottom-8 right-8 bg-cyan-600/80 hover:bg-cyan-600 text-white p-3 rounded-full shadow-lg transition-opacity duration-300 z-50">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"/></svg>
+    </button>
+
+    <script>
+        // --- Menú Móvil ---
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // --- Cerrar menú móvil al hacer clic en un enlace ---
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // --- Botón de Volver Arriba ---
+        const toTopButton = document.getElementById('to-top-button');
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                toTopButton.classList.remove('hidden');
+            } else {
+                toTopButton.classList.add('hidden');
+            }
+        });
+        toTopButton.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // --- Animaciones sutiles al hacer scroll ---
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in-up');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.grid > div, #tiendas > div, #reserva').forEach(el => {
+            el.classList.add('opacity-0'); // Ocultar inicialmente
+            observer.observe(el);
+        });
+
+        // Añadir las clases de animación a la configuración de Tailwind
+        const style = document.createElement('style');
+        style.innerHTML = `
+            @keyframes fadeInUp {
+                from { opacity: 0; transform: translateY(20px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+            .animate-fade-in-up {
+                animation: fadeInUp 0.8s ease-out forwards;
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
 </body>
 </html>
